@@ -1,8 +1,8 @@
 services:
   - type: web
     name: cal-web
-    plan: standard
-    repo: https://github.com/calcom/docker.git
+    plan: starter
+    repo: https://github.com/lsei/calcom-docker.git
     dockerfilePath: ./Dockerfile.render
     env: docker
     envVars:
@@ -23,4 +23,4 @@ services:
 
 databases:
   - name: cal-postgres
-    plan: starter
+    plan: basic-256mb
